@@ -1,0 +1,40 @@
+{
+    "name": "mojito-image-lazyload",
+    "version": "0.0.1",
+    "description": "Utility to convert image src to data-src.",
+    "author": "Julien Lecomte <jlecomte@yahoo-inc.com>",
+    "contributors": [
+        "Julien Lecomte <jlecomte@yahoo-inc.com>",
+        "James Alley <jalley@yahoo-inc.com>"
+    ],
+    "engines": {
+        "node": "> 0.10",
+        "npm": "> 1.2",
+        "mojito": "> 0.8"
+    },
+    "devDependencies": {
+        "mojito": "0.8.x",
+        "mojito-cli": "0.1.x"
+    },
+    "scripts": {
+        "pretest": "mojito jslint app",
+        "test": "istanbul cover --yui=true --dir=artifacts/test/coverage ./node_modules/.bin/mojito -- test app .",
+        "posttest": "istanbul check-coverage --statements 80 --branches 80 --lines 80 --functions 80"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yahoo/mojito-image-lazyload.git"
+    },
+    "bugs": "https://github.com/yahoo/mojito-image-lazyload/issues",
+    "licenses": [
+        {
+            "type": "BSD",
+            "url": "https://github.com/yahoo/mojito-image-lazyload/blob/master/LICENSE.txt"
+        }
+    ],
+    "yahoo": {
+        "mojito": {
+            "type": "bundle"
+        }
+    }
+}
