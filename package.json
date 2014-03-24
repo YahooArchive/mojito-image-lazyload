@@ -1,6 +1,6 @@
 {
     "name": "mojito-image-lazyload",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Utility to convert image src to data-src.",
     "author": "Julien Lecomte <jlecomte@yahoo-inc.com>",
     "contributors": [
@@ -10,11 +10,11 @@
     "engines": {
         "node": "> 0.10",
         "npm": "> 1.2",
-        "mojito": "> 0.8"
+        "mojito": "> 0.9"
     },
     "devDependencies": {
-        "mojito": "0.8.x",
-        "mojito-cli": "0.1.x"
+        "mojito": "0.9.x",
+        "mojito-cli": "0.2.x"
     },
     "scripts": {
         "pretest": "mojito jslint app",
